@@ -7,11 +7,22 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 
 <VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.carracesimulator.PrimaryController">
    <children>
       <Label text="Car Race Simulator" />
-      <Pane prefHeight="360.0" prefWidth="200.0" />
+      <Pane prefHeight="360.0" prefWidth="200.0">
+         <children>
+            <Line endX="430.0" layoutX="430.0" layoutY="90.0" startX="-430.0" />
+            <Line endX="430.0" layoutX="430.0" layoutY="180.0" startX="-430.0" />
+            <Line endX="430.0" layoutX="430.0" layoutY="270.0" startX="-430.0" />
+            <Line endX="100.0" layoutX="109.0" layoutY="180.0" rotate="90.0" scaleX="1.8" startX="-100.0" />
+            <Line endX="100.0" layoutX="800.0" layoutY="180.0" rotate="90.0" scaleX="1.8" startX="-100.0" />
+            <Label layoutX="117.0" layoutY="6.0" text="START" />
+            <Label layoutX="810.0" layoutY="6.0" text="FINISH" />
+         </children>
+      </Pane>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="12.0">
          <children>
             <Button fx:id="primaryButton" text="Start" />
