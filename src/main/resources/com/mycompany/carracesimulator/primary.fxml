@@ -27,7 +27,7 @@
             <Line endX="100.0" layoutX="800.0" layoutY="180.0" rotate="90.0" scaleX="1.8" startX="-100.0" />
             <Label layoutX="117.0" layoutY="6.0" text="START" />
             <Label layoutX="810.0" layoutY="6.0" text="FINISH" />
-            <Group layoutX="10.0" layoutY="25.0">
+            <Group fx:id="carOne" layoutX="10.0" layoutY="25.0">
                <children>
                   <Polygon fill="RED" stroke="BLACK" strokeType="INSIDE">
                     <points>
@@ -62,7 +62,7 @@
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
                </children>
             </Group>
-            <Group layoutX="10.0" layoutY="115.0">
+            <Group fx:id="carTwo" layoutX="10.0" layoutY="115.0">
                <children>
                   <Polygon fill="BLUE" stroke="BLACK" strokeType="INSIDE">
                      <points>
@@ -97,7 +97,7 @@
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
                </children>
             </Group>
-            <Group layoutX="10.0" layoutY="205.0">
+            <Group fx:id="carThree" layoutX="10.0" layoutY="205.0">
                <children>
                   <Polygon fill="GREEN" stroke="BLACK" strokeType="INSIDE">
                      <points>
@@ -132,7 +132,7 @@
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
                </children>
             </Group>
-            <Group layoutX="10.0" layoutY="295.0">
+            <Group fx:id="carFour" layoutX="10.0" layoutY="295.0">
                <children>
                   <Polygon fill="ORANGE" stroke="BLACK" strokeType="INSIDE">
                      <points>
@@ -171,9 +171,9 @@
       </Pane>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="12.0">
          <children>
-            <Button fx:id="startButton" text="Start" />
-            <Button fx:id="pauseButton" mnemonicParsing="false" text="Pause" />
-            <Button fx:id="resetButton" mnemonicParsing="false" text="Reset" />
+            <Button fx:id="startButton" onAction="#startButtonPressed" text="Start" />
+            <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#pauseButtonPressed" text="Pause" />
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetButtonPressed" text="Reset" />
             <Label text="Speed" />
             <Slider fx:id="speedSlider" max="2.0" min="0.5" value="1.0" />
             <Label fx:id="raceMessageLabel" text="Ready to race" />
