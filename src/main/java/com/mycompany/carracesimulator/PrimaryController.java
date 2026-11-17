@@ -67,6 +67,12 @@ public class PrimaryController {
             carAnimations[i].setToX(700);
         }
 
+        speedSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+            for (int i = 0; i < carAnimations.length; i++) {
+                carAnimations[i].setRate(speedSlider.getValue());
+            }
+        });
+
         pauseButton.setDisable(true);
         raceMessageLabel.setText(raceModel.getCarCount() + " cars ready to race");
     }
