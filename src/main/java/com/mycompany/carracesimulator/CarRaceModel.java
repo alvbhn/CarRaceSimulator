@@ -1,7 +1,7 @@
 package com.mycompany.carracesimulator;
 
 /**
- * Stores the data for the four race cars.
+ * Stores the data and finishing order for the four race cars.
  *
  * @author alvee
  */
@@ -13,6 +13,9 @@ public class CarRaceModel {
     private double[] xPositions = new double[4];
     private double[] yPositions = new double[4];
     private double[] speeds = {75, 85, 65, 80};
+    private boolean[] finished = new boolean[4];
+    private int[] finishOrder = new int[4];
+    private int finishedCount;
 
     public CarRaceModel() {
         resetPositions();
@@ -55,10 +58,33 @@ public class CarRaceModel {
         speeds[carIndex] = speed;
     }
 
+    public boolean isFinished(int carIndex) {
+        return finished[carIndex];
+    }
+
+    public int getFinishedCount() {
+        return finishedCount;
+    }
+
+    public int getFinishedCarIndex(int place) {
+        return finishOrder[place];
+    }
+
+    public void recordFinish(int carIndex) {
+        if (!finished[carIndex]) {
+            finished[carIndex] = true;
+            finishOrder[finishedCount] = carIndex;
+            finishedCount++;
+        }
+    }
+
     public void resetPositions() {
+        finishedCount = 0;
         for (int i = 0; i < carNumbers.length; i++) {
             xPositions[i] = 10;
             yPositions[i] = 25 + i * 90;
+            finished[i] = false;
+            finishOrder[i] = -1;
         }
     }
 }
