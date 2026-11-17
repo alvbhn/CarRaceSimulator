@@ -62,6 +62,111 @@
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
                </children>
             </Group>
+            <Group layoutX="10.0" layoutY="115.0">
+               <children>
+                  <Polygon fill="BLUE" stroke="BLACK" strokeType="INSIDE">
+                     <points>
+                        <Double fx:value="0.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="80.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="90.0" />
+                        <Double fx:value="28.0" />
+                        <Double fx:value="90.0" />
+                        <Double fx:value="42.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="42.0" />
+                     </points>
+                  </Polygon>
+                  <Polygon fill="BLUE" stroke="BLACK" strokeType="INSIDE">
+                     <points>
+                        <Double fx:value="15.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="25.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="60.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="75.0" />
+                        <Double fx:value="20.0" />
+                     </points>
+                  </Polygon>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="25.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="45.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Circle fill="#222222" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#222222" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+               </children>
+            </Group>
+            <Group layoutX="10.0" layoutY="205.0">
+               <children>
+                  <Polygon fill="GREEN" stroke="BLACK" strokeType="INSIDE">
+                     <points>
+                        <Double fx:value="0.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="80.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="90.0" />
+                        <Double fx:value="28.0" />
+                        <Double fx:value="90.0" />
+                        <Double fx:value="42.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="42.0" />
+                     </points>
+                  </Polygon>
+                  <Polygon fill="GREEN" stroke="BLACK" strokeType="INSIDE">
+                     <points>
+                        <Double fx:value="15.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="25.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="60.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="75.0" />
+                        <Double fx:value="20.0" />
+                     </points>
+                  </Polygon>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="25.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="45.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Circle fill="#222222" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#222222" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+               </children>
+            </Group>
+            <Group layoutX="10.0" layoutY="295.0">
+               <children>
+                  <Polygon fill="ORANGE" stroke="BLACK" strokeType="INSIDE">
+                     <points>
+                        <Double fx:value="0.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="80.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="90.0" />
+                        <Double fx:value="28.0" />
+                        <Double fx:value="90.0" />
+                        <Double fx:value="42.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="42.0" />
+                     </points>
+                  </Polygon>
+                  <Polygon fill="ORANGE" stroke="BLACK" strokeType="INSIDE">
+                     <points>
+                        <Double fx:value="15.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="25.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="60.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="75.0" />
+                        <Double fx:value="20.0" />
+                     </points>
+                  </Polygon>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="25.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="45.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Circle fill="#222222" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#222222" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+               </children>
+            </Group>
          </children>
       </Pane>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="12.0">
