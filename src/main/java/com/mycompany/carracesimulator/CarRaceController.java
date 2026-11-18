@@ -15,7 +15,7 @@ import javafx.util.Duration;
  *
  * @author alvee
  */
-public class PrimaryController {
+public class CarRaceController {
 
     @FXML
     private Pane racePane;

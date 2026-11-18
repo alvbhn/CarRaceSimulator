@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" spacing="12.0" stylesheets="@race.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.carracesimulator.PrimaryController">
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" spacing="12.0" stylesheets="@race.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.carracesimulator.CarRaceController">
    <children>
       <Label styleClass="race-title" text="Car Race Simulator" />
       <Pane fx:id="racePane" prefHeight="360.0" prefWidth="200.0">
