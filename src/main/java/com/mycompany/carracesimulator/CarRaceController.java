@@ -1,6 +1,5 @@
 package com.mycompany.carracesimulator;
 
-import java.io.IOException;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
@@ -149,8 +148,4 @@ public class CarRaceController {
         updateRaceMessage(raceModel.getCarCount() + " cars ready to race");
     }
 
-    @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
-    }
 }
