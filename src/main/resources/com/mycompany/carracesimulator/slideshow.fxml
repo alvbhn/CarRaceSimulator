@@ -7,7 +7,12 @@
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" spacing="20.0" stylesheets="@race.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.carracesimulator.SlideshowController">
    <children>
       <Label styleClass="race-title" text="Welcome to the Car Race!" />
-      <ImageView fx:id="carImageView" fitHeight="280.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="carCaptionLabel" text="Meet the racers" />
+      <VBox styleClass="car-preview">
+         <children>
+            <ImageView fx:id="carImageView" fitHeight="280.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Label fx:id="carCaptionLabel" styleClass="slideshow-caption" text="Meet the racers" />
+      <Label styleClass="slideshow-note" text="Meet all four cars before the race" />
    </children>
 </VBox>

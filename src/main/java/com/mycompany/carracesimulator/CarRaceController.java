@@ -40,6 +40,9 @@ public class CarRaceController {
     private Label raceMessageLabel;
 
     @FXML
+    private Label raceStatusLabel;
+
+    @FXML
     private ImageView firstPlaceImage;
 
     @FXML
@@ -123,15 +126,15 @@ public class CarRaceController {
     }
 
     private void updateRaceMessage(String status) {
-        String message = status;
+        String message = "Finishing order:";
+        String raceStatus = status;
         for (int i = 0; i < resultImages.length; i++) {
             resultImages[i].setImage(null);
         }
         if (raceModel.getFinishedCount() > 0) {
             int winner = raceModel.getFinishedCarIndex(0);
-            message += "\nCongratulations! Car " + raceModel.getCarNumber(winner)
+            raceStatus += "\nCongratulations! Car " + raceModel.getCarNumber(winner)
                     + " (" + raceModel.getCarColor(winner) + ") wins!";
-            message += "\nFinishing order:";
             for (int i = 0; i < raceModel.getFinishedCount(); i++) {
                 int carIndex = raceModel.getFinishedCarIndex(i);
                 message += "\n" + (i + 1) + ". Car " + raceModel.getCarNumber(carIndex)
@@ -141,6 +144,7 @@ public class CarRaceController {
                         getClass().getResource(imageFile).toExternalForm()));
             }
         }
+        raceStatusLabel.setText(raceStatus);
         raceMessageLabel.setText(message);
     }
 

@@ -29,13 +29,18 @@ Line {
 }
 
 Text {
-    -fx-fill: white;
+    -fx-fill: black;
 }
 
 .race-title {
     -fx-font-size: 26px;
     -fx-font-weight: bold;
     -fx-text-fill: #235b91;
+    -fx-background-color: #235b91;
+    -fx-text-fill: white;
+    -fx-padding: 8 20;
+    -fx-pref-width: 860px;
+    -fx-alignment: CENTER;
 }
 
 #startButton {
@@ -77,25 +82,49 @@ Text {
 }
 
 .results-panel {
-    -fx-background-color: #e4eef8;
-    -fx-border-color: #4b85ba;
+    -fx-background-color: #f1f7fc;
+    -fx-border-color: #a6bfd5;
     -fx-border-width: 2;
     -fx-min-width: 530px;
     -fx-pref-width: 530px;
     -fx-min-height: 230px;
 }
-
-#raceMessageLabel {
-    -fx-padding: 10;
-    -fx-font-size: 12px;
-    -fx-min-width: 420px;
-    -fx-pref-width: 420px;
-    -fx-min-height: 230px;
-    -fx-pref-height: 230px;
+.results-heading {
+    -fx-background-color: #235b91;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 12;
+    -fx-pref-width: 526px;
 }
-
+.race-status {
+    -fx-background-color: #fff3cf;
+    -fx-text-fill: #76520b;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12;
+    -fx-pref-width: 526px;
+    -fx-min-height: 46px;
+    -fx-pref-height: 46px;
+}
+.result-rows {
+    -fx-background-color: white;
+    -fx-min-height: 150px;
+-fx-pref-height: 150px;
+-fx-max-height: 150px;
+    -fx-alignment: CENTER;
+}
+#raceMessageLabel {
+    -fx-padding: 8;
+    -fx-text-fill: #1e466f;
+    -fx-font-size: 14px;
+    -fx-min-width: 270px;
+    -fx-pref-width: 270px;
+    -fx-min-height: 150px;
+    -fx-pref-height: 150px;
+}
 .result-images {
-    -fx-padding: 100 0 0 0;
+    -fx-padding: 31 0 0 0;
     -fx-min-width: 80px;
     -fx-pref-width: 80px;
     -fx-max-width: 80px;
@@ -114,4 +143,26 @@ Text {
     -fx-max-width: 32px;
     -fx-min-height: 360px;
     -fx-pref-height: 360px;
+}
+
+.slideshow-caption {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #235b91;
+    -fx-background-color: white;
+    -fx-padding: 12 24;
+    -fx-pref-width: 540px;
+    -fx-alignment: CENTER;
+}
+.slideshow-note {
+    -fx-font-size: 15px;
+    -fx-text-fill: #52677e;
+}
+.car-preview {
+    -fx-background-color: white;
+    -fx-border-color: #a6bfd5;
+    -fx-border-width: 2;
+    -fx-padding: 20;
+    -fx-alignment: CENTER;
+    -fx-max-width: 540px;
 }

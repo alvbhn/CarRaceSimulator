@@ -52,8 +52,7 @@ public class SlideshowController {
             carImageView.setImage(null);
         }
         carCaptionLabel.setText("Car " + raceModel.getCarNumber(currentCar)
-                + " - " + raceModel.getCarColor(currentCar)
-                + " " + raceModel.getCarType(currentCar));
+                + " - " + raceModel.getCarType(currentCar));
     }
 
     private void nextCar() {

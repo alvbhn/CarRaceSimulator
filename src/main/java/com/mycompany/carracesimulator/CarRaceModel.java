@@ -7,7 +7,7 @@ package com.mycompany.carracesimulator;
  */
 public class CarRaceModel {
 
-    private String[] carTypes = {"Sedan", "Coupe", "Hatchback", "Sports Car"};
+    private String[] carTypes = {"Red race car", "Blue race car", "Green race car", "Orange race car"};
     private int[] carNumbers = {1, 2, 3, 4};
     private String[] carColors = {"Red", "Blue", "Green", "Orange"};
     private double[] xPositions = new double[4];

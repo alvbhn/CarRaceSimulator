@@ -58,8 +58,9 @@
                   </Polygon>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="25.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="45.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
-                  <Circle fill="#222222" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="#222222" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#cbd5e1" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Circle fill="#cbd5e1" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="16.0" layoutX="34.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
                </children>
             </Group>
@@ -93,8 +94,9 @@
                   </Polygon>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="25.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="45.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
-                  <Circle fill="#222222" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="#222222" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#cbd5e1" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Circle fill="#cbd5e1" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="16.0" layoutX="34.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
                </children>
             </Group>
@@ -128,8 +130,9 @@
                   </Polygon>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="25.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="45.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
-                  <Circle fill="#222222" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="#222222" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#cbd5e1" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Circle fill="#cbd5e1" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="16.0" layoutX="34.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
                </children>
             </Group>
@@ -163,8 +166,9 @@
                   </Polygon>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="25.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="12.0" layoutX="45.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
-                  <Circle fill="#222222" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="#222222" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#cbd5e1" layoutX="20.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Circle fill="#cbd5e1" layoutX="70.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="16.0" layoutX="34.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                   <Text layoutX="42.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
                </children>
             </Group>
@@ -190,19 +194,25 @@
                   </HBox>
                </children>
             </VBox>
-            <HBox styleClass="results-panel">
+            <VBox styleClass="results-panel">
                <children>
-                  <Label fx:id="raceMessageLabel" alignment="TOP_LEFT" lineSpacing="16.0" minHeight="140.0" prefHeight="140.0" prefWidth="450.0" text="Ready to race" wrapText="true" />
-                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="result-images">
+                  <Label styleClass="results-heading" text="RACE RESULTS" />
+                  <Label fx:id="raceStatusLabel" styleClass="race-status" text="Ready to race" />
+                  <HBox styleClass="result-rows">
                      <children>
-                        <ImageView fx:id="firstPlaceImage" fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fx:id="secondPlaceImage" fitHeight="30.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fx:id="thirdPlaceImage" fitHeight="30.0" fitWidth="60.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fx:id="fourthPlaceImage" fitHeight="30.0" fitWidth="60.0" layoutX="10.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="raceMessageLabel" alignment="TOP_LEFT" lineSpacing="12.0" minHeight="140.0" prefHeight="140.0" prefWidth="450.0" text="Ready to race" wrapText="true" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="result-images">
+                           <children>
+                              <ImageView fx:id="firstPlaceImage" fitHeight="28.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="secondPlaceImage" fitHeight="28.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="thirdPlaceImage" fitHeight="28.0" fitWidth="60.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="fourthPlaceImage" fitHeight="28.0" fitWidth="60.0" layoutX="10.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </VBox>
                      </children>
-                  </VBox>
+                  </HBox>
                </children>
-            </HBox>
+            </VBox>
          </children>
       </HBox>
    </children>
