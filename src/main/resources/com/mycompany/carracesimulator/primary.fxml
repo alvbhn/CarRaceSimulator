@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -15,7 +16,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" spacing="12.0" stylesheets="@race.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.carracesimulator.CarRaceController">
+<VBox alignment="CENTER" prefHeight="720.0" prefWidth="980.0" spacing="12.0" stylesheets="@race.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.carracesimulator.CarRaceController">
    <children>
       <Label styleClass="race-title" text="Car Race Simulator" />
       <Pane fx:id="racePane" prefHeight="360.0" prefWidth="200.0">
@@ -25,8 +26,8 @@
             <Line endX="430.0" layoutX="430.0" layoutY="270.0" startX="-430.0" />
             <Line endX="100.0" layoutX="109.0" layoutY="180.0" rotate="90.0" scaleX="1.8" startX="-100.0" />
             <Line endX="100.0" layoutX="800.0" layoutY="180.0" rotate="90.0" scaleX="1.8" startX="-100.0" />
-            <Label layoutX="117.0" layoutY="6.0" styleClass="track-label" text="START" />
-            <Label layoutX="810.0" layoutY="6.0" styleClass="track-label" text="FINISH" />
+            <Label layoutX="-36.0" styleClass="track-label" text="START" wrapText="true" />
+            <Label layoutX="864.0" styleClass="track-label" text="A R R I V A L" wrapText="true" />
             <Group fx:id="carOne" layoutX="10.0" layoutY="25.0">
                <children>
                   <Polygon fill="RED" stroke="BLACK" strokeType="INSIDE">
@@ -181,10 +182,27 @@
                      </children>
                   </HBox>
                   <Label text="Speed" />
-                  <Slider fx:id="speedSlider" max="2.0" min="0.5" value="1.0" />
+                  <HBox spacing="8.0">
+                     <children>
+                        <Slider fx:id="speedSlider" max="2.0" min="0.5" value="1.0" />
+                        <Label fx:id="speedValueLabel" text="1.0x" />
+                     </children>
+                  </HBox>
                </children>
             </VBox>
-            <Label fx:id="raceMessageLabel" alignment="TOP_LEFT" minHeight="140.0" prefHeight="140.0" prefWidth="450.0" text="Ready to race" wrapText="true" />
+            <HBox styleClass="results-panel">
+               <children>
+                  <Label fx:id="raceMessageLabel" alignment="TOP_LEFT" lineSpacing="16.0" minHeight="140.0" prefHeight="140.0" prefWidth="450.0" text="Ready to race" wrapText="true" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="result-images">
+                     <children>
+                        <ImageView fx:id="firstPlaceImage" fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="secondPlaceImage" fitHeight="30.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="thirdPlaceImage" fitHeight="30.0" fitWidth="60.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="fourthPlaceImage" fitHeight="30.0" fitWidth="60.0" layoutX="10.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
          </children>
       </HBox>
    </children>

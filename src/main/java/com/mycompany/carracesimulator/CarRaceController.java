@@ -6,6 +6,8 @@ import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
@@ -32,7 +34,22 @@ public class CarRaceController {
     private Slider speedSlider;
 
     @FXML
+    private Label speedValueLabel;
+
+    @FXML
     private Label raceMessageLabel;
+
+    @FXML
+    private ImageView firstPlaceImage;
+
+    @FXML
+    private ImageView secondPlaceImage;
+
+    @FXML
+    private ImageView thirdPlaceImage;
+
+    @FXML
+    private ImageView fourthPlaceImage;
 
     @FXML
     private Group carOne;
@@ -49,11 +66,15 @@ public class CarRaceController {
     private CarRaceModel raceModel = new CarRaceModel();
     private Group[] cars;
     private TranslateTransition[] carAnimations;
+    private ImageView[] resultImages;
 
     @FXML
     public void initialize() {
         cars = new Group[]{carOne, carTwo, carThree, carFour};
         carAnimations = new TranslateTransition[raceModel.getCarCount()];
+        resultImages = new ImageView[]{firstPlaceImage, secondPlaceImage,
+            thirdPlaceImage, fourthPlaceImage};
+        speedValueLabel.setText(speedSlider.getValue() + "x");
 
         for (int i = 0; i < cars.length; i++) {
             cars[i].setLayoutX(raceModel.getXPosition(i));
@@ -74,6 +95,9 @@ public class CarRaceController {
             for (int i = 0; i < carAnimations.length; i++) {
                 carAnimations[i].setRate(speedSlider.getValue());
             }
+            // Show the speed to one decimal place.
+            double displaySpeed = (int) (speedSlider.getValue() * 10 + 0.5) / 10.0;
+            speedValueLabel.setText(displaySpeed + "x");
         });
 
         pauseButton.setDisable(true);
@@ -100,6 +124,9 @@ public class CarRaceController {
 
     private void updateRaceMessage(String status) {
         String message = status;
+        for (int i = 0; i < resultImages.length; i++) {
+            resultImages[i].setImage(null);
+        }
         if (raceModel.getFinishedCount() > 0) {
             int winner = raceModel.getFinishedCarIndex(0);
             message += "\nCongratulations! Car " + raceModel.getCarNumber(winner)
@@ -109,6 +136,9 @@ public class CarRaceController {
                 int carIndex = raceModel.getFinishedCarIndex(i);
                 message += "\n" + (i + 1) + ". Car " + raceModel.getCarNumber(carIndex)
                         + " - " + raceModel.getCarColor(carIndex);
+                String imageFile = "car" + raceModel.getCarNumber(carIndex) + ".png";
+                resultImages[i].setImage(new Image(
+                        getClass().getResource(imageFile).toExternalForm()));
             }
         }
         raceMessageLabel.setText(message);
@@ -147,5 +177,4 @@ public class CarRaceController {
         pauseButton.setDisable(true);
         updateRaceMessage(raceModel.getCarCount() + " cars ready to race");
     }
-
 }

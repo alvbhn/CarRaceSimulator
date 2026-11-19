@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * 
+ * A car race simulator with four racing cars
  * 
  * GitHub Link: https://github.com/alvbhn/CarRaceSimulator
  * 
@@ -21,7 +21,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("slideshow"), 900, 600);
+        scene = new Scene(loadFXML("slideshow"), 980, 720);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
