@@ -9,7 +9,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * JavaFX App
+ * 
+ * 
+ * GitHub Link: https://github.com/alvbhn/CarRaceSimulator
+ * 
+ * @author Alvee Ahsan Bhuiyan
  */
 public class App extends Application {
 

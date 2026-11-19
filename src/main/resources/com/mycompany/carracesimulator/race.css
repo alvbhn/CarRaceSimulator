@@ -1,58 +1,83 @@
 .root {
-    -fx-background-color: #17212f;
+    -fx-background-color: #edf2f7;
     -fx-font-family: Arial;
     -fx-font-size: 13px;
 }
 
 .label {
-    -fx-text-fill: #edf3fa;
+    -fx-text-fill: #24354b;
 }
 
 .button {
-    -fx-background-color: #2f6fa8;
+    -fx-background-color: #2868a8;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-padding: 8 10;
-    -fx-pref-width: 64px;
+    -fx-padding: 9 12;
+    -fx-pref-width: 80px;
 }
 
 #racePane {
-    -fx-background-color: #303a47;
-    -fx-border-color: #64748b;
-    -fx-border-width: 1;
+    -fx-background-color: #394550;
+    -fx-border-color: #94a3b8;
+    -fx-border-width: 2;
 }
 
 Line {
-    -fx-stroke: #aab8c8;
+    -fx-stroke: #d8e1e8;
     -fx-stroke-width: 1.5;
 }
 
 Text {
-    -fx-fill: #edf3fa;
+    -fx-fill: white;
 }
 
 .race-title {
-    -fx-font-size: 24px;
+    -fx-font-size: 26px;
     -fx-font-weight: bold;
+    -fx-text-fill: #235b91;
 }
 
 #startButton {
-    -fx-background-color: #278052;
+    -fx-background-color: #23834f;
 }
 
 #pauseButton {
-    -fx-background-color: #9a6b16;
+    -fx-background-color: #2868a8;
 }
 
 #resetButton {
-    -fx-background-color: #526379;
+    -fx-background-color: #b74b46;
+}
+
+#controlsPanel {
+    -fx-background-color: white;
+    -fx-border-color: #c8d5e2;
+    -fx-border-width: 1;
+    -fx-padding: 14;
+    -fx-spacing: 10;
+    -fx-min-width: 318px;
+    -fx-pref-width: 318px;
+}
+
+#buttonRow {
+    -fx-spacing: 10;
 }
 
 #speedSlider {
-    -fx-pref-width: 110px;
+    -fx-pref-width: 260px;
 }
 
 #raceMessageLabel {
+    -fx-background-color: #e4eef8;
+    -fx-border-color: #b9cfe3;
+    -fx-border-width: 1;
+     -fx-padding: 10;
     -fx-font-size: 12px;
+   -fx-min-width: 530px;
+    -fx-pref-width: 530px;
 }
 
+.track-label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
